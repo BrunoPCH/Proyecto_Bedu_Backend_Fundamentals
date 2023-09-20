@@ -14,8 +14,8 @@ Apartment.belongsTo(User);
 
 //Relacion muchos a muchos
 //Muchos usuarios pueden estar asignados a muchos depas
-User.belongsToMany(Apartment, { trough: "User_apartments" });
-Apartment.belongsToMany(User, { trough: "User_apartments" });
+User.belongsToMany(Apartment, { through: "User_apartments" });
+Apartment.belongsToMany(User, { through: "User_apartments" });
 
 //Exporta BD y ESPERA FUNCIONES ASINCRONAS CONNECT y SYNC que estan en sequelize.js
 exports.initDatabase = async function () {
