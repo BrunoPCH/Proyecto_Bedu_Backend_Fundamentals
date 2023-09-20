@@ -1,15 +1,6 @@
-require("dotenv").config();
-
 // Intalling express
 const express = require("express");
 const app = express();
-
-app.use(express.json());
-
-//Importing DB
-const { initDatabase } = require("./db");
-initDatabase();
-
 // Define and install sequelize
 const { Sequelize, INTEGER, DataTypes } = require("sequelize");
 
