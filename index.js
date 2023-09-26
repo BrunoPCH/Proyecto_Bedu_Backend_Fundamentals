@@ -15,7 +15,7 @@ initDatabase();
 
 // Routers
 const createUserAdminRouter = require("./routers/createAdminUser.js");
-const createUserRouter = require("./routers/createUser.js");
+const createUserRouter = require("./routers/user.js");
 
 //Declaration of Routers
 app.use(createUserAdminRouter);
